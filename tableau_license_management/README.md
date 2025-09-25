@@ -4,11 +4,11 @@ This project showcases my ability to combine SQL, Python, and automation to solv
 
 This Python script tracks changes in employee Tableau licenses for the Scranton branch (site_id = 8). It compares the current day's license assignments and org data to the previous day's snapshot, highlighting changes like:
 
-- ✅ New employees
-- ❌ Departures
-- 🔁 License role changes
-- 🔄 Department changes
-- ⚠️ License usage nearing limit
+- ✅ New employees  
+- ❌ Departures  
+- 🔁 License role changes  
+- 🔄 Department changes  
+- ⚠️ License usage nearing limit  
 
 All detected changes are emailed as an HTML-formatted summary. Task scheduler was used to automate the running of this script daily.
 
@@ -53,6 +53,28 @@ To address this, our department purchased dedicated Tableau licenses for our tea
     - Nearing max allowed licenses (we have 6 Creator and 5 Explorer (Can Publish) licenses)
 3. Email a summary of changes using Gmail SMTP
 4. Truncate and reload the historical table for tomorrow's comparison
+
+---
+## 🔔 Email Notifications
+- ✅ New employees
+  
+  ![New employee](images/new%20employee.png)
+
+- ❌ Departures
+  
+  ![Departures](images/departed%20employee.png)
+
+- 🔁 License role changes
+  
+  ![License role changes](images/license%20change.png)
+
+- 🔄 Department changes
+  
+  ![Department changes](images/department%20change.png)
+
+- ⚠️ License usage nearing limit
+   
+  ![License usage nearing limit](images/license%20count.png)
 
 ---
 
